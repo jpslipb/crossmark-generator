@@ -1,5 +1,5 @@
-import { createFileRoute } from "@tanstack/react-router";
-import { ExternalLink, FileCode2 } from "lucide-react";
+import { createFileRoute, Link } from "@tanstack/react-router";
+import { ExternalLink, FileCode2, Github } from "lucide-react";
 
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -67,6 +67,15 @@ function Index() {
                 </div>
               </div>
               <div className="flex items-center gap-2 self-start md:self-auto">
+                <a
+                  href="https://github.com/jpslipb/crossmark-generator"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex size-10 shrink-0 items-center justify-center rounded-lg border bg-background text-muted-foreground hover:bg-muted hover:text-foreground transition-colors"
+                  aria-label="GitHub Repository"
+                >
+                  <Github className="size-5" />
+                </a>
                 <div className="flex size-10 shrink-0 items-center justify-center rounded-lg bg-primary/10 text-primary">
                   <FileCode2 className="size-5" />
                 </div>
