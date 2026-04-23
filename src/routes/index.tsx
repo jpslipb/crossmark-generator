@@ -91,6 +91,20 @@ function Index() {
             </TabsContent>
           </Tabs>
         </main>
+        <footer className="border-t bg-card/40">
+          <div className="mx-auto flex max-w-5xl flex-col gap-2 px-4 py-3 text-xs text-muted-foreground md:flex-row md:items-center md:justify-between">
+            <p>
+              Aplikasi ini tidak menyimpan data pribadi. Semua data form dihapus setelah sesi
+              berakhir.
+            </p>
+            <a
+              href="/privacy"
+              className="shrink-0 text-xs font-medium text-primary hover:underline"
+            >
+              Kebijakan privasi
+            </a>
+          </div>
+        </footer>
 
         <Toaster richColors closeButton position="top-right" />
       </div>
