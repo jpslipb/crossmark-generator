@@ -93,10 +93,16 @@ function Index() {
         </main>
         <footer className="border-t bg-card/40">
           <div className="mx-auto flex max-w-5xl flex-col gap-2 px-4 py-3 text-xs text-muted-foreground md:flex-row md:items-center md:justify-between">
-            <p>
-              Aplikasi ini tidak menyimpan data pribadi. Semua data form dihapus setelah sesi
-              berakhir.
-            </p>
+            <div className="space-y-1">
+              <p>
+                Aplikasi ini tidak menyimpan data pribadi. Semua data form dihapus setelah sesi
+                berakhir.
+              </p>
+              <p>
+                Dikembangkan oleh Media Konservasi (2026). Aplikasi ini dapat digunakan secara
+                gratis oleh siapa saja.
+              </p>
+            </div>
             <a
               href="/privacy"
               className="shrink-0 text-xs font-medium text-primary hover:underline"
