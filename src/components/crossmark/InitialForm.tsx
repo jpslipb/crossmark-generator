@@ -87,7 +87,7 @@ export function InitialForm() {
                       <HelpTip text="Email jurnal/depositor untuk notifikasi Crossref." />
                     </FormLabel>
                     <FormControl>
-                      <Input type="email" placeholder="email@jurnal.ac.id" {...field} />
+                      <Input type="email" placeholder="email@apps.ipb.ac.id" {...field} />
                     </FormControl>
                     <FormMessage />
                   </FormItem>

@@ -93,7 +93,7 @@ export function CorrectionForm() {
                       Email address <HelpTip text="Email jurnal/depositor." />
                     </FormLabel>
                     <FormControl>
-                      <Input type="email" placeholder="email@jurnal.ac.id" {...field} />
+                      <Input type="email" placeholder="email@apps.ipb.ac.id" {...field} />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
