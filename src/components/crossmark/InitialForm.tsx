@@ -119,23 +119,6 @@ export function InitialForm() {
               <h3 className="font-semibold text-sm uppercase tracking-wide text-muted-foreground">
                 Artikel ({fields.length})
               </h3>
-              <Button
-                type="button"
-                variant="outline"
-                size="sm"
-                onClick={() =>
-                  append({
-                    doi: "",
-                    submitted: "",
-                    finalRevised: "",
-                    accepted: "",
-                    publishedOnline: "",
-                  })
-                }
-              >
-                <Plus className="size-4" />
-                Tambah artikel
-              </Button>
             </div>
 
             <div className="space-y-4">
@@ -214,6 +197,25 @@ export function InitialForm() {
                   </div>
                 </div>
               ))}
+            </div>
+
+            <div className="flex justify-end">
+              <Button
+                type="button"
+                variant="outline"
+                onClick={() =>
+                  append({
+                    doi: "",
+                    submitted: "",
+                    finalRevised: "",
+                    accepted: "",
+                    publishedOnline: "",
+                  })
+                }
+              >
+                <Plus className="size-4" />
+                Tambah artikel
+              </Button>
             </div>
           </CardContent>
         </Card>
