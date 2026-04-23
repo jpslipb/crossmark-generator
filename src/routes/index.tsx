@@ -6,21 +6,21 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { Toaster } from "@/components/ui/sonner";
 import { InitialForm } from "@/components/crossmark/InitialForm";
 import { CorrectionForm } from "@/components/crossmark/CorrectionForm";
+import mediaKonservasiLogo from "@/assets/media-konservasi.svg?url";
 
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Crossref Crossmark XML Generator" },
+      { title: "Media Konservasi — Crossmark XML Generator" },
       {
         name: "description",
         content:
-          "Generator XML deposit Crossref Crossmark untuk metadata awal dan koreksi (corrigendum/erratum/retraction). Schema 4.4.2.",
+          "Generator XML deposit Crossref Crossmark untuk Media Konservasi: metadata awal dan koreksi (corrigendum/erratum/retraction). Schema 4.4.2.",
       },
-      { property: "og:title", content: "Crossref Crossmark XML Generator" },
+      { property: "og:title", content: "Media Konservasi — Crossmark XML Generator" },
       {
         property: "og:description",
-        content:
-          "Buat file XML deposit Crossmark dengan mudah — initial metadata & corrections.",
+        content: "Buat file XML deposit Crossmark dengan mudah — initial metadata & corrections.",
       },
     ],
   }),
@@ -33,27 +33,43 @@ function Index() {
       <div className="min-h-screen bg-background">
         <header className="border-b bg-card/40">
           <div className="mx-auto max-w-5xl px-4 py-6 md:py-8">
-            <div className="flex items-start gap-3">
-              <div className="flex size-10 shrink-0 items-center justify-center rounded-lg bg-primary/10 text-primary">
-                <FileCode2 className="size-5" />
+            <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
+              <div className="flex items-start gap-4">
+                <div className="overflow-hidden rounded-lg border bg-background shadow-sm">
+                  <img
+                    src={mediaKonservasiLogo}
+                    alt="Media Konservasi"
+                    className="h-12 w-auto md:h-14"
+                  />
+                </div>
+                <div className="flex-1">
+                  <p className="text-xs font-semibold tracking-wide text-primary">
+                    Media Konservasi
+                  </p>
+                  <h1 className="text-xl font-bold tracking-tight md:text-2xl">
+                    Crossmark XML Generator
+                  </h1>
+                  <p className="mt-1 text-sm text-muted-foreground">
+                    Bangun file XML deposit Crossmark untuk metadata awal maupun koreksi
+                    (corrigendum / erratum / retraction). Output mengikuti schema Crossref 4.4.2.
+                  </p>
+                  <div className="mt-2 flex flex-wrap items-center gap-3">
+                    <a
+                      href="https://www.crossref.org/documentation/crossmark/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1 text-xs text-primary hover:underline"
+                    >
+                      Dokumentasi Crossmark Crossref
+                      <ExternalLink className="size-3" />
+                    </a>
+                  </div>
+                </div>
               </div>
-              <div className="flex-1">
-                <h1 className="text-xl md:text-2xl font-bold tracking-tight">
-                  Crossref Crossmark XML Generator
-                </h1>
-                <p className="mt-1 text-sm text-muted-foreground">
-                  Bangun file XML deposit Crossmark untuk metadata awal maupun koreksi
-                  (corrigendum / erratum / retraction). Output mengikuti schema Crossref 4.4.2.
-                </p>
-                <a
-                  href="https://www.crossref.org/documentation/crossmark/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="mt-2 inline-flex items-center gap-1 text-xs text-primary hover:underline"
-                >
-                  Dokumentasi Crossmark Crossref
-                  <ExternalLink className="size-3" />
-                </a>
+              <div className="flex items-center gap-2 self-start md:self-auto">
+                <div className="flex size-10 shrink-0 items-center justify-center rounded-lg bg-primary/10 text-primary">
+                  <FileCode2 className="size-5" />
+                </div>
               </div>
             </div>
           </div>

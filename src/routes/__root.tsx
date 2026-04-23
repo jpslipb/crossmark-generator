@@ -1,6 +1,7 @@
 import { Outlet, Link, createRootRoute, HeadContent, Scripts } from "@tanstack/react-router";
 
 import appCss from "../styles.css?url";
+import ipbFavicon from "../assets/ipb-favicon.svg?url";
 
 function NotFoundComponent() {
   return (
@@ -29,20 +30,30 @@ export const Route = createRootRoute({
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Generates Crossref Crossmark XML for scientific journal managers, simplifying metadata submission and corrections." },
-      { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Generates Crossref Crossmark XML for scientific journal managers, simplifying metadata submission and corrections." },
+      { title: "Media Konservasi — Crossmark XML Generator" },
+      {
+        name: "description",
+        content:
+          "Generator Crossref Crossmark XML untuk Media Konservasi: initial metadata dan corrections (corrigendum/erratum/retraction).",
+      },
+      { name: "author", content: "Media Konservasi" },
+      { property: "og:title", content: "Media Konservasi — Crossmark XML Generator" },
+      {
+        property: "og:description",
+        content:
+          "Buat file XML deposit Crossmark untuk metadata awal maupun koreksi dengan mudah. Output mengikuti schema Crossref 4.4.2.",
+      },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
-      { name: "twitter:site", content: "@Lovable" },
-      { name: "twitter:title", content: "Lovable App" },
-      { name: "twitter:description", content: "Generates Crossref Crossmark XML for scientific journal managers, simplifying metadata submission and corrections." },
-      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/13368231-4ce2-42aa-bcbe-86c7a22b4f6f/id-preview-c0e350d2--e5ea3dd0-3645-4d63-93ba-5e01ae821050.lovable.app-1776922463241.png" },
-      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/13368231-4ce2-42aa-bcbe-86c7a22b4f6f/id-preview-c0e350d2--e5ea3dd0-3645-4d63-93ba-5e01ae821050.lovable.app-1776922463241.png" },
+      { name: "twitter:title", content: "Media Konservasi — Crossmark XML Generator" },
+      {
+        name: "twitter:description",
+        content:
+          "Generator Crossref Crossmark XML untuk Media Konservasi: initial metadata dan corrections.",
+      },
     ],
     links: [
+      { rel: "icon", type: "image/svg+xml", href: ipbFavicon },
       {
         rel: "stylesheet",
         href: appCss,
@@ -56,7 +67,7 @@ export const Route = createRootRoute({
 
 function RootShell({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
+    <html lang="id">
       <head>
         <HeadContent />
       </head>

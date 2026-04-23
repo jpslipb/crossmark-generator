@@ -67,7 +67,8 @@ export function InitialForm() {
                 render={({ field }) => (
                   <FormItem>
                     <FormLabel className="flex items-center gap-1.5">
-                      Depositor name <HelpTip text="Nama pengelola yang men-submit batch (boleh siapa saja)." />
+                      Depositor name{" "}
+                      <HelpTip text="Nama pengelola yang men-submit batch (boleh siapa saja)." />
                     </FormLabel>
                     <FormControl>
                       <Input placeholder="contoh: Arif" {...field} />
@@ -82,7 +83,8 @@ export function InitialForm() {
                 render={({ field }) => (
                   <FormItem>
                     <FormLabel className="flex items-center gap-1.5">
-                      Email address <HelpTip text="Email jurnal/depositor untuk notifikasi Crossref." />
+                      Email address{" "}
+                      <HelpTip text="Email jurnal/depositor untuk notifikasi Crossref." />
                     </FormLabel>
                     <FormControl>
                       <Input type="email" placeholder="email@jurnal.ac.id" {...field} />
@@ -98,7 +100,8 @@ export function InitialForm() {
               render={({ field }) => (
                 <FormItem>
                   <FormLabel className="flex items-center gap-1.5">
-                    DOI Crossmark Policy <HelpTip text="DOI halaman kebijakan Crossmark jurnal. Contoh: 10.29244/medkon.crossmark" />
+                    DOI Crossmark Policy{" "}
+                    <HelpTip text="DOI halaman kebijakan Crossmark jurnal. Contoh: 10.29244/medkon.crossmark" />
                   </FormLabel>
                   <FormControl>
                     <Input placeholder="10.29244/medkon.crossmark" {...field} />
@@ -165,7 +168,8 @@ export function InitialForm() {
                     render={({ field }) => (
                       <FormItem>
                         <FormLabel className="flex items-center gap-1.5">
-                          DOI artikel <HelpTip text="DOI artikel yang akan didepositkan. Contoh: 10.29244/medkon.31.2.72" />
+                          DOI artikel{" "}
+                          <HelpTip text="DOI artikel yang akan didepositkan. Contoh: 10.29244/medkon.31.2.72" />
                         </FormLabel>
                         <FormControl>
                           <Input placeholder="10.29244/medkon.31.2.72" {...field} />
@@ -179,7 +183,8 @@ export function InitialForm() {
 
                   <div>
                     <p className="text-xs font-medium text-muted-foreground mb-3 flex items-center gap-1.5">
-                      Publication history (opsional) <HelpTip text="Format YYYY-MM-DD. Field yang diisi akan dimasukkan ke custom_metadata." />
+                      Publication history (opsional){" "}
+                      <HelpTip text="Format YYYY-MM-DD. Field yang diisi akan dimasukkan ke custom_metadata." />
                     </p>
                     <div className="grid gap-3 sm:grid-cols-2">
                       {(

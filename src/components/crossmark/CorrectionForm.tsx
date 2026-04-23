@@ -74,7 +74,8 @@ export function CorrectionForm() {
                 render={({ field }) => (
                   <FormItem>
                     <FormLabel className="flex items-center gap-1.5">
-                      Depositor name <HelpTip text="Nama pengelola yang men-submit batch koreksi." />
+                      Depositor name{" "}
+                      <HelpTip text="Nama pengelola yang men-submit batch koreksi." />
                     </FormLabel>
                     <FormControl>
                       <Input placeholder="contoh: Arif" {...field} />
@@ -130,10 +131,7 @@ export function CorrectionForm() {
 
             <div className="space-y-4">
               {fields.map((field, index) => (
-                <div
-                  key={field.id}
-                  className="rounded-lg border bg-muted/20 p-4 space-y-4"
-                >
+                <div key={field.id} className="rounded-lg border bg-muted/20 p-4 space-y-4">
                   <div className="flex items-center justify-between">
                     <span className="text-xs font-medium text-muted-foreground">
                       Koreksi #{index + 1}
@@ -159,7 +157,8 @@ export function CorrectionForm() {
                       render={({ field }) => (
                         <FormItem>
                           <FormLabel className="flex items-center gap-1.5">
-                            DOI artikel yang dikoreksi <HelpTip text="DOI artikel asli yang dikoreksi/dicabut." />
+                            DOI artikel yang dikoreksi{" "}
+                            <HelpTip text="DOI artikel asli yang dikoreksi/dicabut." />
                           </FormLabel>
                           <FormControl>
                             <Input placeholder="10.29244/medkon.30.3.423" {...field} />
@@ -174,7 +173,8 @@ export function CorrectionForm() {
                       render={({ field }) => (
                         <FormItem>
                           <FormLabel className="flex items-center gap-1.5">
-                            Jenis koreksi <HelpTip text="correction (corrigendum), erratum, atau retraction." />
+                            Jenis koreksi{" "}
+                            <HelpTip text="correction (corrigendum), erratum, atau retraction." />
                           </FormLabel>
                           <Select onValueChange={field.onChange} value={field.value}>
                             <FormControl>
@@ -198,7 +198,8 @@ export function CorrectionForm() {
                       render={({ field }) => (
                         <FormItem>
                           <FormLabel className="flex items-center gap-1.5">
-                            Tanggal koreksi <HelpTip text="Tanggal publikasi koreksi (YYYY-MM-DD)." />
+                            Tanggal koreksi{" "}
+                            <HelpTip text="Tanggal publikasi koreksi (YYYY-MM-DD)." />
                           </FormLabel>
                           <FormControl>
                             <Input type="date" {...field} />
@@ -213,7 +214,8 @@ export function CorrectionForm() {
                       render={({ field }) => (
                         <FormItem>
                           <FormLabel className="flex items-center gap-1.5">
-                            DOI Crossmark Policy <HelpTip text="DOI halaman kebijakan Crossmark jurnal." />
+                            DOI Crossmark Policy{" "}
+                            <HelpTip text="DOI halaman kebijakan Crossmark jurnal." />
                           </FormLabel>
                           <FormControl>
                             <Input placeholder="10.29244/medkon.crossmark" {...field} />
@@ -234,7 +236,11 @@ export function CorrectionForm() {
                           <HelpTip text="DOI artikel baru yang mengkoreksi artikel lama. Jika diisi, otomatis disisipkan ke deskripsi sebagai 'Corrigendum: doi.org/...'." />
                         </FormLabel>
                         <FormControl>
-                          <Input placeholder="10.29244/medkon.30.3.470" {...field} value={field.value ?? ""} />
+                          <Input
+                            placeholder="10.29244/medkon.30.3.470"
+                            {...field}
+                            value={field.value ?? ""}
+                          />
                         </FormControl>
                         <FormMessage />
                       </FormItem>

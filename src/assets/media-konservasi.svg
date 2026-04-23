@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="600" viewBox="0 0 1200 600">
+  <rect width="1200" height="600" fill="#2f5b45" />
+  <g fill="#ffffff" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif">
+    <text x="600" y="210" font-size="110" letter-spacing="6">MEDIA</text>
+    <text x="600" y="330" font-size="110" letter-spacing="6">KONSERVASI</text>
+    <text x="600" y="420" font-size="38" letter-spacing="2">SCIENTIFIC JOURNAL IN CONSERVATION,</text>
+    <text x="600" y="470" font-size="38" letter-spacing="2">ENVIRONMENT &amp; ECOTOURISM</text>
+  </g>
+</svg>
