@@ -36,7 +36,7 @@ Bagian **Koreksi** — daftar dinamis. Setiap entri:
 - Tanggal koreksi _(wajib, `YYYY-MM-DD`)_
 - DOI Crossmark Policy _(wajib)_
 - DOI artikel pengoreksi _(opsional)_ — jika diisi, ikut disisipkan ke teks `correction_item`
-- Deskripsi correction_item _(wajib, textarea)_ — contoh: "Correction on authors' name and affiliation."
+- Deskripsi correction*item *(wajib, textarea)\_ — contoh: "Correction on authors' name and affiliation."
 
 XML yang dihasilkan mengikuti struktur file koreksi contoh: `<crossmark>` berisi `<crossmark_policy>`, `<updates><update type="…" date="…">DOI</update></updates>`, dan `<custom_metadata><assertion name="correction_item" …>`.
 
