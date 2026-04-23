@@ -51,7 +51,7 @@ export const correctionSchema = z.object({
     .array(
       z.object({
         targetDoi: doiField,
-        type: z.enum(["correction", "erratum", "retraction"]),
+        type: z.enum(["correction", "erratum", "retraction", "addendum"]),
         date: z
           .string()
           .trim()

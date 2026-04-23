@@ -15,7 +15,7 @@ export const Route = createFileRoute("/")({
       {
         name: "description",
         content:
-          "Generator XML deposit Crossref Crossmark untuk Media Konservasi: metadata awal dan koreksi (corrigendum/erratum/retraction). Schema 4.4.2.",
+          "Generator XML deposit Crossref Crossmark untuk Media Konservasi: metadata awal dan koreksi (corrigendum/erratum/retraction/addendum). Schema 4.4.2.",
       },
       { property: "og:title", content: "Media Konservasi — Crossmark XML Generator" },
       {
@@ -51,7 +51,8 @@ function Index() {
                   </h1>
                   <p className="mt-1 text-sm text-muted-foreground">
                     Bangun file XML deposit Crossmark untuk metadata awal maupun koreksi
-                    (corrigendum / erratum / retraction). Output mengikuti schema Crossref 4.4.2.
+                    (corrigendum / erratum / retraction / addendum). Output mengikuti schema
+                    Crossref 4.4.2.
                   </p>
                   <div className="mt-2 flex flex-wrap items-center gap-3">
                     <a

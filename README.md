@@ -1,8 +1,9 @@
 # Media Konservasi — Crossmark XML Generator
 
 Aplikasi web untuk membantu pengelola jurnal **Media Konservasi** menghasilkan berkas **XML deposit Crossref Crossmark** dengan cepat untuk:
+
 - **Initial metadata** (deposit awal Crossmark)
-- **Correction item** (corrigendum / erratum / retraction)
+- **Correction item** (corrigendum / erratum / retraction / addendum)
 
 Output mengikuti **schema Crossref 4.4.2** (Crossmark).
 
@@ -23,6 +24,7 @@ Output mengikuti **schema Crossref 4.4.2** (Crossmark).
 5. Salin atau unduh XML yang dihasilkan untuk proses deposit ke Crossref.
 
 Catatan:
+
 - Tombol **Tambah artikel** / **Tambah koreksi** digunakan untuk menambahkan item baru.
 - Tombol **Reset** akan menghapus isian form dan menghapus output XML yang sudah dibuat.
 
@@ -33,6 +35,7 @@ Aplikasi ini tidak menyimpan data pribadi (termasuk nama dan alamat email). Selu
 ## Development
 
 Persyaratan:
+
 - Node.js **>= 22.12.0**
 
 Menjalankan secara lokal:
@@ -58,4 +61,3 @@ npm run build
 ## Deploy
 
 Repository ini disiapkan agar dapat dideploy di Vercel menggunakan konfigurasi `vercel.json`.
-

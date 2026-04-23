@@ -34,7 +34,7 @@ export const Route = createRootRoute({
       {
         name: "description",
         content:
-          "Generator Crossref Crossmark XML untuk Media Konservasi: initial metadata dan corrections (corrigendum/erratum/retraction).",
+          "Generator Crossref Crossmark XML untuk Media Konservasi: initial metadata dan corrections (corrigendum/erratum/retraction/addendum).",
       },
       { name: "author", content: "Media Konservasi" },
       { property: "og:title", content: "Media Konservasi — Crossmark XML Generator" },

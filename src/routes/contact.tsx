@@ -23,7 +23,8 @@ function ContactPage() {
           </p>
           <h1 className="text-2xl font-bold tracking-tight">Kontak</h1>
           <p className="text-sm text-muted-foreground">
-            Ada kritik dan masukan? Silakan hubungi redaksi Media Konservasi melalui informasi berikut.
+            Ada kritik dan masukan? Silakan hubungi redaksi Media Konservasi melalui informasi
+            berikut.
           </p>
         </header>
 

@@ -174,7 +174,7 @@ export function CorrectionForm() {
                         <FormItem>
                           <FormLabel className="flex items-center gap-1.5">
                             Jenis koreksi{" "}
-                            <HelpTip text="correction (corrigendum), erratum, atau retraction." />
+                            <HelpTip text="correction (corrigendum), erratum, retraction, atau addendum." />
                           </FormLabel>
                           <Select onValueChange={field.onChange} value={field.value}>
                             <FormControl>
@@ -186,6 +186,7 @@ export function CorrectionForm() {
                               <SelectItem value="correction">correction (corrigendum)</SelectItem>
                               <SelectItem value="erratum">erratum</SelectItem>
                               <SelectItem value="retraction">retraction</SelectItem>
+                              <SelectItem value="addendum">addendum</SelectItem>
                             </SelectContent>
                           </Select>
                           <FormMessage />
