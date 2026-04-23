@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useForm, useFieldArray } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { Plus, Trash2, FileCode } from "lucide-react";
+import { Plus, Trash2, FileCode, RotateCcw } from "lucide-react";
 
 import { initialSchema, type InitialFormValues } from "@/lib/crossmark-schema";
 import { buildInitialXml } from "@/lib/crossmark-xml";
@@ -220,7 +220,19 @@ export function InitialForm() {
           </CardContent>
         </Card>
 
-        <div className="flex justify-end">
+        <div className="flex justify-end gap-3">
+          <Button
+            type="button"
+            variant="outline"
+            size="lg"
+            onClick={() => {
+              form.reset();
+              setXml(null);
+            }}
+          >
+            <RotateCcw className="size-4" />
+            Reset
+          </Button>
           <Button type="submit" size="lg" disabled={!form.formState.isValid}>
             <FileCode className="size-4" />
             Generate XML
