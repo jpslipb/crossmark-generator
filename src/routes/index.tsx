@@ -103,12 +103,14 @@ function Index() {
                 gratis oleh siapa saja.
               </p>
             </div>
-            <a
-              href="/privacy"
-              className="shrink-0 text-xs font-medium text-primary hover:underline"
-            >
-              Kebijakan privasi
-            </a>
+            <div className="flex shrink-0 items-center gap-4">
+              <a href="/contact" className="text-xs font-medium text-primary hover:underline">
+                Kontak
+              </a>
+              <a href="/privacy" className="text-xs font-medium text-primary hover:underline">
+                Kebijakan privasi
+              </a>
+            </div>
           </div>
         </footer>
 
